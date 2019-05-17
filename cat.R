@@ -2,7 +2,7 @@ library(xlsx)
 library(tidyverse)
 library(dplyr)
 ?read.xlsx2()
-#yo
+#yoyoyoyoyoyoyoyoyoyoyoyoyoyoyoyoyyo
 test <- read.xlsx2("C:/Users/Student/Desktop/Rpractice/data/cat_done.xlsx",1,colClasses = c('character','numeric'))
 
 colnames(test)[2] <- 'result'
@@ -19,7 +19,7 @@ cat[cat$categories=='Golf',]
 
 
 restaurant_cat <- cat[cat$result == 1,]
-restaurant_cat[restaurant_cat$categories=="Pretzels(椒鹽??��??)",][1] <- 'Pretzels'
+restaurant_cat[restaurant_cat$categories=="Pretzels(æ¤’é¹½??†é??)",][1] <- 'Pretzels'
 unique(restaurant_cat$categories)
 lst <- as.list(as.character(unique(restaurant_cat$categories)))
 
